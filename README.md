@@ -1,3 +1,4 @@
+'''
 ROBOTICS_APP/
 ├── app/
 │   ├── __init__.py       # Khởi tạo ứng dụng Flask
@@ -12,3 +13,4 @@ ROBOTICS_APP/
 ├── app.py                # Entry point
 ├── requirements.txt      
 ├── config.py             
+'''
