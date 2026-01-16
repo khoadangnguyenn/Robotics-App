@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-</body>
-</html>
+<!-- CAMERA -->
+<div class="manual-camera">
+    Display Camera
+</div>
+
+<!-- CONTROL BAR -->
+<div class="manual-control-bar">
+
+    <!-- WASD -->
+    <div class="wasd-panel">
+        <button>(W) UP</button>
+        <div class="wasd-row">
+            <button>(A) LEFT</button>
+            <button>(S) DOWN</button>
+            <button>(D) RIGHT</button>
+        </div>
+    </div>
+
+    <!-- STEP MODE -->
+    <div class="step-panel">
+        <button class="step-btn active">(H) High step</button>
+        <button class="step-btn">(L) Low step</button>
+    </div>
+
+    <!-- DISPLAY PARAMETERS -->
+    <div class="param-panel">
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo-panel">
+        <img src="{{ url_for('static', filename='images/logo_hcmut.png') }}" alt="Logo" class="logo-img" style="width: 70px; height: 70px;">
+        <img src="{{ url_for('static', filename='images/logo_coteccons.png') }}" alt="Logo" class="logo-img" style="width: 200px; height: 70px;">
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/manual.js') }}"></script>
+{% endblock %}

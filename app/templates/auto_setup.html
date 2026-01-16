@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-</body>
-</html>
+<!-- CAMERA -->
+<div class="auto-camera">
+    Display Camera
+</div>
+
+<!-- CONTROL BAR -->
+<div class="auto-control-bar">
+
+    <!-- LEFT BUTTONS -->
+    <div class="auto-left">
+        <button class="auto-btn">Set point</button>
+        <button class="auto-btn">Set speed</button>
+    </div>
+
+    <!-- RUN -->
+    <div class="auto-run">
+        <button class="run-btn" onclick="startAuto()">RUN</button>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo-panel">
+        <img src="{{ url_for('static', filename='images/logo_hcmut.png') }}" alt="Logo" class="logo-img" style="width: 70px; height: 70px;">
+        <img src="{{ url_for('static', filename='images/logo_coteccons.png') }}" alt="Logo" class="logo-img" style="width: 200px; height: 70px;">
+    </div>
+
+</div>
+
+<script>
+function startAuto() {
+    window.location.href = "/auto/monitor";
+}
+</script>
+
+{% endblock %}

@@ -1,1 +1,310 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
 
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.mode-toggle {
+    display: flex;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.toggle-btn {
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.toggle-btn.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* Camera area */
+.camera-area {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.camera-panel {
+    flex: 1;
+    height: 420px;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #666;
+}
+
+/* Control bar */
+.control-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+}
+
+/* Boxes */
+.step-box button,
+.auto-buttons button,
+.move-box button {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.param-box {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.param-box div {
+    margin: 5px 0;
+}
+/* ===== MANUAL CAMERA ===== */
+.manual-camera {
+    height: 520px;
+    margin: 10px;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #444;
+    border-radius: 6px;
+}
+
+/* ===== CONTROL BAR ===== */
+.manual-control-bar {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+/* ===== WASD ===== */
+.wasd-panel button {
+    width: 120px;
+    height: 60px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.wasd-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* ===== STEP MODE ===== */
+.step-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step-btn {
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid #1e3a8a;
+    background: white;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.step-btn.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* ===== PARAMETERS ===== */
+.param-panel {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.param-panel div {
+    margin: 5px 0;
+}
+
+/* ===== LOGO ===== */
+.logo-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+/* ===== AUTO CAMERA ===== */
+.auto-camera {
+    height: 520px;
+    margin: 10px;
+    background: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #444;
+    border-radius: 6px;
+}
+
+/* ===== AUTO CONTROL BAR ===== */
+.auto-control-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+}
+
+/* LEFT BUTTONS */
+.auto-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auto-btn {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* RUN BUTTON */
+.auto-run {
+    display: flex;
+    justify-content: center;
+}
+
+.run-btn {
+    width: 180px;
+    height: 120px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 28px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* LOGO reuse */
+.logo-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+/* ===== MONITOR MAIN ===== */
+.monitor-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.monitor-screen {
+    height: 460px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #555;
+}
+
+/* ===== CONTROL BAR ===== */
+.monitor-control {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+}
+
+/* STEP */
+.step-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.step-btn {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    background: #f5f5f5;
+}
+
+.step-btn.active {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* PARAMETERS */
+.param-panel {
+    background: #1e3a8a;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* ACTIONS */
+.action-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.auto-btn {
+    padding: 12px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.auto-btn.danger {
+    background: #b91c1c;
+}
+
+/* LOGO */
+.logo-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #1e3a8a;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot Control Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="status">
+        ... Robot Control Dashboard ...
+    </div>
+
+    <div class="mode-toggle">
+        <a href="/manual" class="toggle-btn">Manual control</a>
+        <a href="/auto/setup" class="toggle-btn">Auto control</a>
+    </div>
+</header>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

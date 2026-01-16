@@ -1,19 +1,19 @@
 from flask import Blueprint, render_template
 
-bp = Blueprint('main', __name__)
+main = Blueprint('main', __name__)
 
-@bp.route('/')
+@main.route('/')
 def home (): 
-    return render_template('home.html', title='Home Page')
+    return render_template('index.html', title='Home Page')
 
-@bp.route('/manual')
+@main.route('/manual')
 def manual(): 
     return render_template('manual.html', title='Manual Control')
 
-@bp.route('/auto/setup')
+@main.route('/auto/setup')
 def auto_setup(): 
     return render_template('auto_setup.html', title='Auto Setup')
 
-@bp.route('/auto/montor')
+@main.route('/auto/monitor')
 def auto_monitor(): 
     return render_template('auto_monitor.html', title='Auto Monitor')

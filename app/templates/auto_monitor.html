@@ -1,10 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-</body>
-</html>
+<!-- MAIN DISPLAY -->
+<div class="monitor-main">
+    <div class="monitor-screen">Display View 1</div>
+    <div class="monitor-screen">Display View 2</div>
+</div>
+
+<!-- BOTTOM CONTROL -->
+<div class="monitor-control">
+
+    <!-- STEP CONTROL -->
+    <div class="step-control">
+        <button class="step-btn active">(H) High step</button>
+        <button class="step-btn">(L) Low step</button>
+    </div>
+
+    <!-- PARAMETERS -->
+    <div class="param-panel">
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+        <div>Display Parameters: 0.0</div>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="action-panel">
+        <button class="auto-btn">Set map</button>
+        <button class="auto-btn danger">Stop</button>
+        <button class="auto-btn">speed -</button>
+        <button class="auto-btn">speed +</button>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo-panel">
+        <img src="{{ url_for('static', filename='images/logo_hcmut.png') }}" alt="Logo" class="logo-img" style="width: 70px; height: 70px;">
+        <img src="{{ url_for('static', filename='images/logo_coteccons.png') }}" alt="Logo" class="logo-img" style="width: 200px; height: 70px;">
+    </div>
+
+</div>
+
+{% endblock %}
