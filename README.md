@@ -1,4 +1,4 @@
-<img width="468" height="243" alt="image" src="https://github.com/user-attachments/assets/ad1c89b8-16f0-45a6-8fa5-216395434695" />
+<img alt="image" src="https://github.com/user-attachments/assets/ad1c89b8-16f0-45a6-8fa5-216395434695" />
 
 ```
 ROBOTICS_APP/
